@@ -284,7 +284,7 @@ app.post("/delete", async (req, res) => {
   res.send({ msg: "Deleted" });
 });
 
-mongoose.connect("mongodb://localhost:27017/statsDB", {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
 });
 const port = process.env.PORT || 8000;
