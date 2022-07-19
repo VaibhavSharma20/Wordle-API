@@ -13,6 +13,7 @@ Now create a `.env` file in the root of your project with the following:
 
 ```
 RAPID_API_KEY={your_rapid_api_key}
+MONGO_URL={your_mongo_url}
 ```
 
 ### `create config.js file`
