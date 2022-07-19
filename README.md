@@ -15,6 +15,28 @@ Now create a `.env` file in the root of your project with the following:
 RAPID_API_KEY={your_rapid_api_key}
 ```
 
+### `create config.js file`
+Now create a `config.js` file in the root of your project with the following syntax:
+
+```
+const firebase = require("firebase");
+
+const firebaseConfig = {
+  apiKey: ,
+  authDomain: ,
+  projectId: ,
+  storageBucket: ,
+  messagingSenderId: ,
+  appId: 
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const Words = db.collection("Words");
+module.exports = Words;
+
+```
+
 To run this project please type the following commands:
 
 ### `npm i`
